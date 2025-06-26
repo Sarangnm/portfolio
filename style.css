@@ -195,7 +195,7 @@ p{
     transition: opacity 0.3s ease;
 }
 .image-wrapper img{
-    height: fit-content;
+    height: auto;
     width: 100%;
     border-radius: 10px;
 }
@@ -321,6 +321,9 @@ form textarea{
     }
     #workcontainer{
         flex-direction: column;
+    }
+    #image-wrapper{
+        max-height: 200px;
     }
     #workcontainer h2{
         font-size: 18px;

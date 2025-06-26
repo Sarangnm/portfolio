@@ -177,32 +177,33 @@ p{
 .image-wrapper {
     position: relative;
     width: 100%;
-    height: 220px;
+    border-radius: 8px;
     overflow: hidden;
+    
 }
 .overlay-buttons {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
+    gap: 20px;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 .image-wrapper img{
-    height: auto;
     width: 100%;
-    border-radius: 10px;
+    height: auto;
+    display: block;
+    transition: all 0.3s ease;
 }
 .image-wrapper:hover{
     transform: scale(1.01);
-    transition: .5s;
+    box-shadow: 4px 6px 8px rgba(255, 255, 255, 0.1);
 }
 .image-wrapper:hover .overlay-buttons {
     opacity: 1;
@@ -226,6 +227,7 @@ p{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex: 1;
 }
 .works h2{
     font-weight: 400;
@@ -325,6 +327,9 @@ form textarea{
     }
     .image-wrapper{
         max-height: 200px;
+    }
+    .img-wrapper img{
+        object-fit: contain;
     }
     #workcontainer h2{
         font-size: 18px;

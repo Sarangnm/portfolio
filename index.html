@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google fonts for Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Dev Icon-->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />      
+</head>
+<body>
+    <header>
+        <div class="logo">Portfolio.</div>
+        <nav class="navbar" id="navbar">
+            <a href="#content" class="nav-links">Home</a>
+            <a href="#about-section" class="nav-links">About</a>
+            <a href="#skill-section" class="nav-links">Skills</a>
+            <a href="#project-section" class="nav-links">Project</a>
+            <a href="#contact-section" class="nav-links">Contact</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <section id="content">
+        <div class="heading">
+            <h1>Hi, </h1>
+            <h2>I'm Sarang N M</h2>
+            <h3>Front-end Developer</h3>
+        </div>
+        <div id="subtext">
+            <p>I design and develop responsive user interfaces with a focus on performance, accessibility, and clean code.</p>
+        </div>
+        <div class="button">
+            <button id="viewwork">
+                <a href="#project-section">View Work</a> 
+            </button>
+        </div>
+    </section>
+    <section id="about-section">
+        <div>
+            <h3 class="head">About</h3>
+        </div>
+        <div>
+            <p>I'm Sarang N M, a front-end developer with a passion for building fast,  responsive, and user-friendly web    experiences. I enjoy turning design    concepts into functional, clean code.</p>
+        </div>
+        <div id="aboutBtn">
+            <a id="skillBtn" class="active-tab">Skills</a>
+            <a id="eduBtn">Education</a>
+        </div>
+        <div id="aboutBtnContents">
+            <div id="skills" class= "active-menu">
+                <h2>Frontend Development:</h2>
+                <p>HTML, CSS, JavaScript</p>
+                <h2>Programming Languages:</h2>
+                <p>Python (Basic), C (Basic), Java (Basic)</p>
+                <h2>Database:</h2>
+                <p>MySQL (Basic)</p>
+                <h2>Version Control:</h2>
+                <p>Git & GitHub</p> 
+                <h2>Other Tools:</h2>
+                <p>Visual Studio Code, Chrome DevTools</p>
+            </div>
+            <div id="education">
+                <h2>B.Tech in information Technology</h2>
+                <p>Institute of Engineering and Technology</p>
+                <p>2021-25</p>
+            </div>
+        </div>
+    </section>
+    <section id="skill-section">
+        <div>
+            <h3 class="head">Skills</h3>
+        </div>
+        <div>
+            <p>These are the technologies I've worked with.</p>
+        </div>
+        <div id="logocontainer">
+            <div class="logos">     
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" />
+            </div>
+            <div class="logos">         
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" />
+            </div>
+            <div class="logos">       
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+            </div>
+            <div class="logos">                   
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+            </div>
+            <div class="logos">    
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+            </div>
+            <div class="logos">        
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+            </div>
+            <div class="logos">   
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+            </div>
+            <div class="logos">    
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg" />
+            </div>
+        </div>
+    </section>
+    <section id="project-section">
+        <div>
+            <h3 class="head">Projects</h3>
+        </div>
+        <div>
+            <p>Checkout my recent work.</p>
+        </div>
+        <div id="workcontainer">
+            <div class="works">
+                <h2>Digital Clock</h2>
+                <div class="image-wrapper">
+                    <img src="images/work-1.png" alt="Digital Clock">
+                    <div class="overlay-buttons">
+                        <a href="https://sarangnm.github.io/digital-clock/" class="btn">Demo</a>
+                        <a href="https://github.com/Sarangnm/digital-clock.git" class="btn">Code</a>
+                    </div>
+                </div>
+                <p>A simple Digital clock App with HTML, CSS, JavaScript  with Seperate buttons for changing theme and time format.</p>
+            </div>
+            <div class="works">
+                <h2>E-Commerce Website</h2>
+                <div class="image-wrapper">
+                    <img src="images/work-2.png" alt="E-Commerce Website">
+                    <div class="overlay-buttons">
+                        <a href="https://sarangnm.github.io/ecommerce-frontend/" class="btn">Demo</a>
+                        <a href="https://github.com/Sarangnm/ecommerce-frontend.git" class="btn">Code</a>
+                    </div>
+                </div>
+                <p>An E-Commerce website made using HTML, CSS and JavaScript</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact-section">
+        <div>
+            <h3 class="head">Contact</h3>
+        </div>
+        <div>
+            <p><i class="fa-solid fa-envelope"></i> sarangnm.25@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 9539819351</p>
+        </div>
+        <div id="contact-form">
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea name="message" rows="6" placeholder="Message"></textarea>
+                <button type="submit" id="sub-btn" >Submit</button>
+            </form>
+        </div>
+    </section>
+    <script src = index.js></script>
+</body>
+</html>

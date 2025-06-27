@@ -243,7 +243,7 @@ p{
     gap: 20px;
 }
 /* Contact Section */
-#contact-section p i{
+#favicon{
     color: #d52424;
     margin-right: 15px;
 }
@@ -290,7 +290,7 @@ form textarea{
     text-decoration: none;
     border: 3px solid #d52424;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 #msg{
     color: rgb(12, 148, 12);
@@ -370,8 +370,12 @@ form textarea{
     #contact-form form{
     width: 100%;
     }
-    #social-icons {
-        font-size: 15px;
+    .social-icons {
+        font-size: 19px;
+    }
+    #cvbtn,
+    .social-icons{
+        padding: 5px 10px;
     }
 }
 @media (min-width: 1024px) {

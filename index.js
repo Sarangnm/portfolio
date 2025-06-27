@@ -49,4 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
         skills.classList.remove("active-menu");
         skillBtn.classList.remove("active-tab");
     });
+    //form submission//
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('msg');
+
+    form.addEventListener('submit', function () {
+        setTimeout(() => {
+        status.style.display = 'block';
+        }, 500);
+    });
 });

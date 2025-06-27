@@ -11,10 +11,14 @@ body{
     color: #fff;
     
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 5%;
     z-index: 1000;
 }
@@ -156,9 +160,9 @@ p{
 }
 /* Skills Section */
 .logos{
-    height: 150px;
-    width: 150px;
-    padding: 10px;
+    height: 180px;
+    width: 180px;
+    padding: 20px;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
@@ -239,7 +243,7 @@ p{
     gap: 20px;
 }
 /* Contact Section */
-#contact-section i{
+#contact-section p i{
     color: #d52424;
     margin-right: 15px;
 }
@@ -249,11 +253,10 @@ p{
     width: 75%;
     gap: 20px;
 }
-#sub-btn{
-    width: fit-content;
-    align-self: center;
+#sub-btn{   
+    align-self: flex-start;
     font-size: 18px;
-    padding: 5px 25px;
+    padding: 10px 25px;
     background: none;
     color: #fff;
     text-decoration: none;
@@ -268,8 +271,31 @@ p{
 form input,
 form textarea{
     background-color: #262626;
+    color: #fff;
     border: 0;
     padding: 15px;   
+}
+#socials {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-flex ;
+    align-items: baseline;
+}
+#cvbtn,
+.social-icons {
+    font-size: 18px;
+    padding: 10px 25px;
+    background: #d52424;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #d52424;
+    cursor: pointer;
+    margin-right: 20px;
+}
+#msg{
+    color: rgb(12, 148, 12);
+    font-size: 16px;
+    display: none;
 }
 /* smartphone */
 @media (max-width: 768px) {
@@ -321,6 +347,7 @@ form textarea{
     .logos{
         height: 100px;
         width: 100px;
+        padding: 10px;
     }
     #workcontainer{
         flex-direction: column;
@@ -335,12 +362,34 @@ form textarea{
         font-size: 18px;
     }
     #sub-btn{
-        font-size: 10px;
+        font-size: 15px;
     }
     .btn{
     font-size: 15px;
     }
     #contact-form form{
     width: 100%;
+    }
+    #social-icons {
+        font-size: 15px;
+    }
+}
+@media (min-width: 1024px) {
+    .logo{
+        font-size: 45px;
+    }
+    .navbar a{
+        font-size: 25px;
+    }
+    .logos{
+        height: 220px;
+        width: 220px;
+        padding: 40px;
+    }
+    .head{
+        font-size: 35px;
+    }
+    p{
+        font-size: 20px;
     }
 }
